@@ -1,0 +1,57 @@
+﻿@page "/products"
+@using ChannelEngine.Core.Interfaces
+@using ChannelEngine.Core.Models
+@inject HttpClient Http
+@inject IProductService productService
+@inject IJSRuntime JsRuntime
+<PageTitle>Top Five</PageTitle>
+
+<h1>Top Five</h1>
+
+<p>Demonstrates top five sold products.</p>
+
+@if (products == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product No</th>
+                <th>Title</th>
+                <th>Gtin</th>
+                <th>Quantity</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in products)
+            {
+                <tr>
+                    <td>@product.MerchantProductNo</td>
+                    <td>@product.Description</td>
+                    <td>@product.Gtin</td>
+                    <td>@product.Quantity</td>
+                    <td><button @onclick="async () => { await ButtonClick(product); }">Update Stock</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private IEnumerable<Product> products;
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await productService.GetTopFiveProducts();
+    }
+
+    async Task ButtonClick(Product selectedProduct)
+    {
+        await productService.UpdateProductStock(selectedProduct.MerchantProductNo, 25);
+        await JsRuntime.InvokeVoidAsync("alert", $"You successfully updated the product : {selectedProduct.MerchantProductNo}"); 
+    }
+}
