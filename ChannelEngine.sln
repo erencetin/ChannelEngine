@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.WebUI", "ChannelEngine.WebUI.csproj", "{A3D67118-C103-4CCF-A935-26A37FA55DB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.Core", "ChannelEngine.Core\ChannelEngine.Core.csproj", "{F4F038D0-8739-42E7-B679-C61538F7A8FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Core", "..\ChannelEngine.Core\ChannelEngine.Core.csproj", "{F4F038D0-8739-42E7-B679-C61538F7A8FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.Infrastructure", "ChannelEngine.Infrastructure\ChannelEngine.Infrastructure.csproj", "{EB9A972E-01F2-4203-B24C-ED608B32EB70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Infrastructure", "..\ChannelEngine.Infrastructure\ChannelEngine.Infrastructure.csproj", "{EB9A972E-01F2-4203-B24C-ED608B32EB70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.Console", "ChannelEngine.Console\ChannelEngine.Console.csproj", "{9B17278C-12C1-48C3-B824-4E51DB692058}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Console", "..\ChannelEngine.Console\ChannelEngine.Console.csproj", "{9B17278C-12C1-48C3-B824-4E51DB692058}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.Test", "ChannelEngine.Test\ChannelEngine.Test.csproj", "{72220639-87B0-4ECF-A22F-BCDFBD350642}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelEngine.Test", "..\ChannelEngine.Test\ChannelEngine.Test.csproj", "{72220639-87B0-4ECF-A22F-BCDFBD350642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelEngine.WebUI", "ChannelEngine.WebUI\ChannelEngine.WebUI.csproj", "{8024DA12-5049-4D47-B1B0-22EAA1B79CB8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A3D67118-C103-4CCF-A935-26A37FA55DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3D67118-C103-4CCF-A935-26A37FA55DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3D67118-C103-4CCF-A935-26A37FA55DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3D67118-C103-4CCF-A935-26A37FA55DB1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F4F038D0-8739-42E7-B679-C61538F7A8FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F4F038D0-8739-42E7-B679-C61538F7A8FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4F038D0-8739-42E7-B679-C61538F7A8FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{72220639-87B0-4ECF-A22F-BCDFBD350642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72220639-87B0-4ECF-A22F-BCDFBD350642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72220639-87B0-4ECF-A22F-BCDFBD350642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8024DA12-5049-4D47-B1B0-22EAA1B79CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8024DA12-5049-4D47-B1B0-22EAA1B79CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8024DA12-5049-4D47-B1B0-22EAA1B79CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8024DA12-5049-4D47-B1B0-22EAA1B79CB8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
