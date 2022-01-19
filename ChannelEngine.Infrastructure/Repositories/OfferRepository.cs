@@ -1,7 +1,6 @@
 ﻿using ChannelEngine.Core;
 using ChannelEngine.Core.Interfaces;
 using ChannelEngine.Core.Models;
-using ChannelEngine.Core.Specifications;
 using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
